@@ -5,6 +5,6 @@ def reverse_each_word(sentence)
   sentenceArray.each {|word|
     reconstructedSentence = reconstructedSentence + "#{word.reverse} "
   }
-  reconstructedSentence = reconstructedSentence.chomp
+  reconstructedSentence.chomp
 
 end
