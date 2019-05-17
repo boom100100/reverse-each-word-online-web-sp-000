@@ -1,8 +1,10 @@
 def reverse_each_word(sentence)
   sentenceArray = sentence.split(" ")
+  reconstructedSentence = ""
 
-  sentenceArray.each_with_index {|word, index|
-    sentenceArray[index] = word.reverse
+  sentenceArray.each {|word|
+    reconstructedSentence = reconstructedSentence + "#{word.reverse} "
   }
+  reconstructedSentence = reconstructedSentence.chomp
 
 end
